@@ -1,9 +1,10 @@
-import './App.css';
+import Home from './Pages/Home/Home';
+import './assets/styles/reset.scss';
 
 function App() {
   return (
     <div className="App">
-      <h1>InPulse CRM</h1>
+      <Home />
     </div>
   );
 }
