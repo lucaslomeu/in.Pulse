@@ -1,8 +1,7 @@
 import React from 'react';
 import './SideBar.scss';
 
-import { GrSchedule } from 'react-icons/gr';
-import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { AiOutlineShoppingCart, AiOutlineSchedule } from 'react-icons/ai';
 import {
   RiContactsLine,
   RiUserReceivedLine,
@@ -17,7 +16,7 @@ const SideBar = () => {
     <div className="sidebar">
       <ul className="sidebar-nav">
         <li>
-          <GrSchedule />
+          <AiOutlineSchedule />
           <p>Agenda</p>
         </li>
         <li>
