@@ -4,8 +4,13 @@ import './Input.scss';
 const Input = ({ titleInput, type, placeholder }) => {
   return (
     <div className="inputForm">
-      <h1>{titleInput}</h1>
-      <input type={type} placeholder={placeholder} />
+      <label htmlFor={titleInput}>{titleInput}</label>
+      <input
+        type={type}
+        placeholder={placeholder}
+        name={titleInput}
+        id={titleInput}
+      />
     </div>
   );
 };

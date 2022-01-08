@@ -1,6 +1,7 @@
 import React from 'react';
 import './SearchClient.scss';
 import Input from '../Input/Input';
+import { CgAdd } from 'react-icons/cg';
 
 const SearchClient = () => {
   return (
@@ -11,19 +12,30 @@ const SearchClient = () => {
         <input type="radio" name="people" id="juridica" value="Jurídica" />
         <label for="juridica">Jurídica</label>
       </div>
-
+      <div className="stroke"></div>
       <div className="inputs-container">
-        <div className="inputs">
-          <Input type="text" placeholder="Razão Social" />
-          <Input type="text" placeholder="Nome Fantasia" />
-          <Input type="text" placeholder="Contato" />
-          <Input type="text" placeholder="CPF/CNPJ" />
-          <Input type="text" placeholder="RG/Inscrição Estadual" />
-          <Input type="text" placeholder="CPF/CNPJ" />
-          <Input type="text" placeholder="Código ERP" />
-          <Input type="text" placeholder="Campanha" />
-          <Input type="text" placeholder="Carteira" />
-          <Input type="date" placeholder="Data do Cadastro" />
+        <div className="client-content">
+          <div className="client-info">
+            <Input type="text" titleInput="Razão Social" />
+            <Input type="text" titleInput="Nome Fantasia" />
+            <Input type="text" titleInput="Contato" />
+            <Input type="text" titleInput="CPF/CNPJ" />
+            <Input type="text" titleInput="RG/Inscrição Estadual" />
+            <Input type="text" titleInput="CPF/CNPJ" />
+            <Input type="text" titleInput="Código ERP" />
+            <Input type="text" titleInput="Campanha" />
+            <Input type="text" titleInput="Carteira" />
+            <Input type="date" titleInput="Data do Cadastro" />
+          </div>
+          <div className="stroke"></div>
+          <div className="client-phone">
+            <Input type="number" titleInput="Área " />
+            <Input type="phone" titleInput="Telefone " />
+            <Input type="text" titleInput="Descrição Telefone" />
+            {/* <div className="add-btn">
+              <CgAdd />
+            </div> */}
+          </div>
         </div>
       </div>
     </div>
