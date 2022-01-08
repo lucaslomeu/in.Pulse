@@ -4,20 +4,26 @@ import './Card.scss';
 const Card = ({ titleCard }) => {
   return (
     <div className="card">
-      <h1>{titleCard}</h1>
-      {titleCard === 'Tempo logado' && <p>Tempo logado:</p>}
+      <h1 className="titleCard">{titleCard}</h1>
+      {titleCard === 'Tempo logado' && (
+        <div className="card-content">
+          <div className="card-item">Código: 1231</div>
+          <div className="card-item">Prioridade: Supervisor</div>
+          <div className="card-item">Tempo logado: 00:03:12</div>
+        </div>
+      )}
       {titleCard === 'Pedidos' && (
-        <div>
-          <p>Pedidos:</p>
-          <p>Pedidos Fechados:</p>
-          <p>Pedidos Fidelizados:</p>
+        <div className="card-content">
+          <div className="card-item">Pedidos: 12</div>
+          <div className="card-item">Pedidos Fechados: 4</div>
+          <div className="card-item">Pedidos Fidelizados: 5</div>
         </div>
       )}
       {titleCard === 'Ligações' && (
-        <div>
-          <p>Ligações efetuadas:</p>
-          <p>Tempo em ligação:</p>
-          <p>Tempo total em ligações:</p>
+        <div className="card-content">
+          <div className="card-item">Ligações efetuadas: 5</div>
+          <div className="card-item">Tempo em ligação: 12:21:34</div>
+          <div className="card-item">Tempo total em ligações: 43:12:03</div>
         </div>
       )}
     </div>
