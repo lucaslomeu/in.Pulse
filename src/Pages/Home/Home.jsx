@@ -4,6 +4,7 @@ import Card from '../../components/Card/Card';
 import Header from '../../components/Header/Header';
 import SideBar from '../../components/SideBar/SideBar';
 import SearchClient from '../../components/SearchClient/SearchClient';
+import HistoryClient from '../../components/HistoryClient/HistoryClient';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
         </div>
         <div className="client-content">
           <SearchClient />
+          <HistoryClient />
         </div>
       </div>
     </div>

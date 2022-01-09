@@ -1,7 +1,7 @@
 import React from 'react';
 import './Input.scss';
 
-const Input = ({ titleInput, type, placeholder }) => {
+const Input = ({ titleInput, type }) => {
   return (
     <div className="inputForm">
       <label htmlFor={titleInput}>{titleInput}</label>
