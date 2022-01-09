@@ -8,17 +8,17 @@ import SearchClient from '../../components/SearchClient/SearchClient';
 const Home = () => {
   return (
     <div className="container">
-      <Header />
+      <SideBar />
       <div className="content">
-        <SideBar />
-        <div className="right-content">
-          <div className="itens">
-            <div className="cards-container">
-              <Card titleCard="Tempo logado" />
-              <Card titleCard="Pedidos" />
-              <Card titleCard="Ligações" />
-            </div>
+        <Header />
+        <div className="itens">
+          <div className="cards-container">
+            <Card titleCard="Detalhes de Ligação" />
+            <Card titleCard="Pedidos" />
+            <Card titleCard="Ligações" />
           </div>
+        </div>
+        <div className="client-content">
           <SearchClient />
         </div>
       </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import './SearchClient.scss';
 import Input from '../Input/Input';
-import { CgAdd } from 'react-icons/cg';
 
 const SearchClient = () => {
   return (
@@ -12,9 +11,11 @@ const SearchClient = () => {
         <input type="radio" name="people" id="juridica" value="Jurídica" />
         <label for="juridica">Jurídica</label>
       </div>
+
       <div className="stroke"></div>
+
       <div className="inputs-container">
-        <div className="client-content">
+        <div className="client-container">
           <div className="client-info">
             <Input type="text" titleInput="Razão Social" />
             <Input type="text" titleInput="Nome Fantasia" />
@@ -25,15 +26,7 @@ const SearchClient = () => {
             <Input type="text" titleInput="Campanha" />
             <Input type="text" titleInput="Carteira" />
             <Input type="date" titleInput="Data do Cadastro" />
-          </div>
-          <div className="stroke"></div>
-          <div className="client-phone">
-            <Input type="number" titleInput="Área " />
-            <Input type="phone" titleInput="Telefone " />
-            <Input type="text" titleInput="Descrição Telefone" />
-            {/* <div className="add-btn">
-              <CgAdd />
-            </div> */}
+            <Input type="phone" titleInput="Telefone" />
           </div>
         </div>
       </div>

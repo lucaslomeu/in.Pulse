@@ -1,11 +1,10 @@
 .search-client {
-  max-width: 1100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem 0;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
-  margin: 0 2rem;
+  color: var(--fourth-color);
 
   .select-people {
     display: flex;
@@ -28,18 +27,11 @@
     flex-direction: column;
     align-items: center;
 
-    input {
-      &:active,
-      &:focus,
-      &:hover {
-        outline: 1px solid var(--third-color);
-      }
-    }
-
-    .client-content {
+    .client-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      width: 95%;
 
       .client-info {
         display: flex;
@@ -49,37 +41,12 @@
         align-items: center;
         margin: 1rem;
       }
-
-      .client-phone {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
-        color: var(--dark-color);
-        margin: 1rem;
-
-        input {
-          width: 220px;
-          height: 30px;
-          margin-right: 2rem;
-        }
-
-        input[type='number'] {
-          width: 50px;
-          height: 30px;
-        }
-
-        // .add-btn {
-        //   margin: 0 2rem;
-        // }
-      }
     }
   }
+
   .stroke {
     border-bottom: 1px solid var(--primary-color);
     width: 90%;
-    margin: 0.5rem auto;
     opacity: 0.4;
   }
 }

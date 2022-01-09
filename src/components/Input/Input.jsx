@@ -7,7 +7,7 @@ const Input = ({ titleInput, type, placeholder }) => {
       <label htmlFor={titleInput}>{titleInput}</label>
       <input
         type={type}
-        placeholder={placeholder}
+        placeholder={titleInput}
         name={titleInput}
         id={titleInput}
       />

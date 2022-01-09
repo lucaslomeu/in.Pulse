@@ -1,5 +1,6 @@
 import React from 'react';
 import './SideBar.scss';
+import logoImg from '../../assets/img/logo.png';
 
 import { AiOutlineShoppingCart, AiOutlineSchedule } from 'react-icons/ai';
 import {
@@ -14,6 +15,9 @@ import { CgNotes } from 'react-icons/cg';
 const SideBar = () => {
   return (
     <div className="sidebar">
+      <div className="logo">
+        <img src={logoImg} alt="Logo" />
+      </div>
       <ul className="sidebar-nav">
         <li>
           <AiOutlineSchedule />
