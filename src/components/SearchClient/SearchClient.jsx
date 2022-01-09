@@ -7,7 +7,7 @@ const SearchClient = () => {
   return (
     <div className="search-client">
       <div className="select-people">
-        <input type="radio" name="people" id="fisica" value="Física" />
+        <input type="radio" name="people" id="fisica" value="Física" checked />
         <label for="fisica">Física</label>
         <input type="radio" name="people" id="juridica" value="Jurídica" />
         <label for="juridica">Jurídica</label>
@@ -19,9 +19,8 @@ const SearchClient = () => {
             <Input type="text" titleInput="Razão Social" />
             <Input type="text" titleInput="Nome Fantasia" />
             <Input type="text" titleInput="Contato" />
-            <Input type="text" titleInput="CPF/CNPJ" />
-            <Input type="text" titleInput="RG/Inscrição Estadual" />
-            <Input type="text" titleInput="CPF/CNPJ" />
+            <Input type="number" titleInput="CPF/CNPJ" />
+            <Input type="number" titleInput="RG/Inscrição Estadual" />
             <Input type="text" titleInput="Código ERP" />
             <Input type="text" titleInput="Campanha" />
             <Input type="text" titleInput="Carteira" />
