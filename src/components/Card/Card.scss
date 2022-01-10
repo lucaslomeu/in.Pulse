@@ -2,25 +2,32 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 10px;
+  padding: 5px 10px;
   width: 290px;
-  height: 150px;
+  height: 125px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
   color: var(--fourth-color);
+  border-top: 2px solid var(--primary-color);
+  border-radius: 5px;
 
   .titleCard {
-    color: var(--primary-color);
-    font-size: 1.2rem;
+    color: var(--dark-color);
+    font-size: 1.1rem;
   }
 
   .card-content {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    color: var(--dark-secondary-color);
 
     .card-item {
       display: flex;
       align-items: center;
       align-content: center;
       margin: 10px 0;
+
+      span {
+        font-weight: 700;
+      }
     }
   }
 }

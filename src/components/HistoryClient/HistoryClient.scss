@@ -6,36 +6,80 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
   color: var(--fourth-color);
   width: 100%;
+  border-top: 2px solid var(--primary-color);
+  border-radius: 5px;
+
+  .search-input {
+    width: 95%;
+    height: 40px;
+    font-size: 1rem;
+    padding-left: 10px;
+    margin-bottom: 1rem;
+  }
 
   .table-history {
     width: 95%;
 
     .head-table {
-      height: 35px;
+      .row-head {
+        height: 45px;
+      }
 
       th {
-        background-color: var(--fourth-color);
-        color: var(--white-color);
-        font-weight: 400;
+        border-bottom: 2px solid var(--primary-color);
+        color: var(--primary-color);
+        font-weight: 700;
+        text-align: left;
+        padding-left: 0.3rem;
+      }
+
+      .th-arrow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
       }
     }
 
     .body-table {
-      .row {
-        height: 35px;
-
-        &:hover {
-          background-color: var(--white-color);
-        }
+      td {
+        text-align: left;
+        padding-left: 0.3rem;
+        font-size: 0.9rem;
       }
     }
 
-    th,
-    td {
-      width: 10%;
-      text-align: left;
-      padding-left: 0.3rem;
-      font-size: 0.9rem;
+    .row {
+      height: 40px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
+
+      &:hover {
+        background-color: var(--white-color);
+      }
+    }
+  }
+
+  .pagination {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    .btn-pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--dark-color);
+      width: 25px;
+      height: 25px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .selected {
+      border-bottom: 1px solid var(--primary-color);
     }
   }
 }

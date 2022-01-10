@@ -1,14 +1,16 @@
 .callDetail {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  gap: 1rem;
 
   .info-call {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 100%;
+    font-size: 0.9rem;
+    color: var(--dark-secondary-color);
 
     .call-title {
       color: var(--primary-color);
@@ -17,12 +19,13 @@
     }
 
     .call-number {
-      font-size: 1rem;
+      font-weight: 700;
     }
 
     .duration-call {
-      font-size: 1rem;
-
+      span {
+        font-weight: 700;
+      }
       .card-item {
         display: flex;
         align-items: center;
@@ -34,8 +37,9 @@
 
   .action-call {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
     font-size: 1.5rem;
 
     .accept {

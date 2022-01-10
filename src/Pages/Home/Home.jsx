@@ -13,6 +13,7 @@ const Home = () => {
       <div className="content">
         <Header />
         <div className="itens">
+          <SearchClient />
           <div className="cards-container">
             <Card titleCard="Detalhes de Ligação" />
             <Card titleCard="Pedidos" />
@@ -20,7 +21,6 @@ const Home = () => {
           </div>
         </div>
         <div className="client-content">
-          <SearchClient />
           <HistoryClient />
         </div>
       </div>

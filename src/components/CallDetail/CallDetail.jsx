@@ -9,7 +9,7 @@ const CallDetail = () => {
       <div className="info-call">
         <div className="call-number">(33) 99932-1998</div>
         <div className="duration-call">
-          <p>Tempo de duração: 01:42:22</p>
+          <span>Tempo de duração: </span>01:42:22
         </div>
       </div>
       <div className="action-call">

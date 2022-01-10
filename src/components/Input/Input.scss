@@ -10,16 +10,23 @@
 input {
   color: var(--black-color);
   border: none;
-  border-bottom: 1px solid var(--primary-color);
+  border-radius: 3px;
   outline: none;
+  background-color: RGBA(0, 0, 0, 0.08);
 }
 
 input[type='text'],
 input[type='phone'],
 input[type='date'],
 input[type='number'] {
-  width: 200px;
-  height: 30px;
-  padding-left: 5px;
-  margin-right: 5rem;
+  width: 250px;
+  height: 35px;
+  padding-left: 7px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: rgba(50, 50, 93, 0.4) 0px 2px 3px -1px,
+      rgba(50, 50, 93, 0.6) 0px 1px 3px -1px;
+  }
 }

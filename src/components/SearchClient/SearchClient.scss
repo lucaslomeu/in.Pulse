@@ -4,7 +4,8 @@
   align-items: center;
   padding: 2rem 0;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
-  color: var(--fourth-color);
+  border-top: 2px solid var(--primary-color);
+  border-radius: 5px;
 
   .select-people {
     display: flex;
@@ -40,6 +41,11 @@
         justify-content: center;
         align-items: center;
         margin: 1rem;
+        gap: 0rem 5rem;
+
+        label {
+          color: var(--dark-color);
+        }
       }
     }
   }
