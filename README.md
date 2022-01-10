@@ -3,8 +3,8 @@
 <br>
 
 <h1 align="center">
-  <img alt="Full Page"  src=".github/FullPage.png" width="600px" />
-  <img alt="CNPJ Checked"  src=".github/cnpj.png" width="600px" />
+  <img alt="Full Page"  src=".github/FullPage.png" />
+  <img alt="CNPJ Checked"  src=".github/cnpj.png" />
 </h1>
 
 <br>
